@@ -1,0 +1,141 @@
+
+.header{
+    height:55px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: fixed;
+    z-index:1;
+    background-color: white;
+    top:0px;
+    left:0px;
+    right:0px;
+
+    border-bottom-width: 1px;
+    border-bottom-style:solid;
+    border-bottom-color: rgb(208, 208, 208);
+
+}
+
+.left-section{
+    display: flex;
+    align-items: center;
+}
+.hamburger-menu{
+    height:24px;
+    margin: 0px 24px;
+}
+.youtube-logo{
+    height:20px;
+}
+.middle-section{
+    display:flex;
+    align-items: center;
+    flex:1;
+    margin-left: 70px;
+    margin-right: 30px;
+    max-width: 500px;
+
+}
+.search-bar{
+    flex:1;
+    height:34px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(194, 194, 194);
+    border-radius:2px;
+    box-shadow: inset 1px 2px 3px rgba(0,0,0, 0.05)
+}
+.search-bar::placeholder{
+    font-family: Roboto, Arial;
+    font-size: 16px;
+
+}
+.search-btn{
+    height: 38px;
+    width:60px;
+    background-color: rgb(237, 237, 237);
+    border-width:1px;
+    border-style:solid;
+    border-color: rgb(194, 194, 194);
+    margin-left:-1px;
+    margin-right:  4px;
+    position: relative;
+}
+.search-icon{
+    height: 25px;
+    margin-top:4px;
+}
+.search-btn .tooltip{
+    position: absolute;
+    background-color: gray;
+    color:white;
+    padding:8px 4px;
+    margin-right:10px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom:-35px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+}
+.search-btn:hover .tooltip{
+    opacity: 100;
+}
+.voice-btn{
+    height: 40px;
+    width:40px;
+
+    background-color: rgb(237, 237, 237);
+    border-radius: 20px;
+    border: none;
+
+}
+.voice-icon{
+    height: 25px;
+    margin-top:4px;
+}
+.right-section{
+    margin-right:20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 180px;
+    flex-shrink: 0px;
+}
+.upload{
+    height:24px;
+}
+.apps{
+    height:24px;
+}
+.notif{
+    position: relative;
+}
+.notifications{
+    height:24px;
+}
+.counter{
+    position: absolute;
+    right:-6px;
+    top:-2px;
+    background-color: rgb(211, 23, 23);
+    color:white;
+    border-radius:10px;
+    font-size: 8px;
+    font-family: Roboto, Arial;
+    padding-left:6px;
+    padding-right:6px;
+    padding-top:3px;
+    padding-bottom:3px;
+
+}
+.avatar{
+    height: 32px;
+    width:32px;
+    border-radius: 16px;
+}
